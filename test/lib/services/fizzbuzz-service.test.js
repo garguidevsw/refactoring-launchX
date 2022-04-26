@@ -19,7 +19,7 @@ describe('Test FIZZBUZZ', () => {
         const explorer = {name: "Explorer5", score: 5}
 
         const res = FizzbussService.applyValidationInExplorer(explorer);
-        expect(res.trick).toBe('BUZ')
+        expect(res.trick).toBe('BUZZ')
     });
 
     test('should return fizzbuzz', () => {
