@@ -29,4 +29,17 @@ describe("Test FIZZBUZZ", () => {
         expect(res.trick).toBe("FIZZBUZZ");
     });
 
+    test("validation fizzbuzz", () => {
+        const number1 = 1;
+        const number3 = 3;
+        const number5 = 5;
+        const number15 = 15;
+
+        expect(FizzbussService.applyValidationInNumber(number1)).toBe(1);
+        expect(FizzbussService.applyValidationInNumber(number3)).toBe("FIZZ");
+        expect(FizzbussService.applyValidationInNumber(number5)).toBe("BUZZ");
+        expect(FizzbussService.applyValidationInNumber(number15)).toBe("FIZZBUZZ");
+
+    });
+
 });
