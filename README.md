@@ -59,3 +59,9 @@ npm install -D jest
 ```
 npm install dotenv --save
 ```
+
+- Telegram Bot
+```
+npm install node-telegram-bot-api --save
+```
+
