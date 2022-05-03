@@ -42,3 +42,20 @@ app.get("/v1/fizzbuzz/:score", (request, response) => {
     });
 });
 ```
+
+## Dependencias
+
+- Express
+```
+npm install express --save
+```
+
+- Jest
+```
+npm install -D jest
+```
+
+- DotEnv
+```
+npm install dotenv --save
+```
