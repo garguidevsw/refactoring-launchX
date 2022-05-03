@@ -34,4 +34,20 @@ describe("Test Explorer Controller", () => {
         expect(trick15).toBe("FIZZBUZZ");
 
     });
+
+    test("should get a valid bot response", () => {
+        const resp1 = ExplorerController.fizzBuzzBotResponse(1);
+        const resp3 = ExplorerController.fizzBuzzBotResponse(3);
+        const resp5 = ExplorerController.fizzBuzzBotResponse(5);
+        const resp15 = ExplorerController.fizzBuzzBotResponse(15);
+        const respNode = ExplorerController.fizzBuzzBotResponse("node");
+        const respJS = ExplorerController.fizzBuzzBotResponse("js");
+
+        expect(resp1).toBe("Tu número es: 1. Validación: 1");
+        expect(resp3).toBe("Tu número es: 3. Validación: FIZZ");
+        expect(resp5).toBe("Tu número es: 5. Validación: BUZZ");
+        expect(resp15).toBe("Tu número es: 15. Validación: FIZZBUZZ");
+        expect(respNode).toBe("Explorers Misión NODE: ajolonauta1, ajolonauta2, ajolonauta3, ajolonauta4, ajolonauta5, ajolonauta11, ajolonauta12, ajolonauta13, ajolonauta14, ajolonauta15");
+        expect(respJS).toBe("No se encontraron explorers para la misión JS");
+    });
 });
